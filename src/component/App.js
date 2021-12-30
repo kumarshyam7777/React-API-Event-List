@@ -8,6 +8,7 @@ import ImageList from "./ImageList";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.onSearchSubmit = this.onSearchSubmit.bind(this);
     this.state = {
       images: [],
     };
@@ -31,4 +32,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;
